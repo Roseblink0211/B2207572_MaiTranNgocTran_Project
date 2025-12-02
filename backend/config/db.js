@@ -5,7 +5,7 @@ const connectDB = async () => {
     await mongoose.connect(process.env.MONGO_URI, {
       // Sử dụng parser mới cho chuỗi kết nối.
       useNewUrlParser: true,
-      // Sử dụng topology thống nhất để quản lý kết nối
+      // Sử dụng topology thống nhất để quản lý kết nối.
       useUnifiedTopology: true,
     });
     console.log("MongoDB connected");
